@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>דוח ניהול סיכונים — מעבדות וירטואליות</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,sans-serif;line-height:1.6;background:linear-gradient(135deg,#667eea,#764ba2);color:#2c3e50;padding:18px}
+.wrap{max-width:1100px;margin:0 auto;background:rgba(255,255,255,.98);border-radius:18px;box-shadow:0 25px 50px rgba(0,0,0,.2);overflow:hidden}
+.r-nav ul{display:flex;list-style:none;flex-wrap:wrap}
+.r-nav li{flex:1}
+.r-nav a{display:block;padding:12px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.78em}
+.r-nav a:hover{background:#2c3e50;color:#fff}
+html{scroll-behavior:smooth}
+@media print{body{background:#fff!important;padding:0}.wrap{box-shadow:none;border-radius:0}}
+</style></head>
+<body><div class="wrap"><div id="reportApp">
+<div style="background:#fff8e1;border:1px solid #f0b429;border-radius:12px;margin:16px 22px;padding:11px 15px;color:#7a5c00;font-size:.78em;line-height:1.55;display:flex;gap:9px;align-items:flex-start">
+  <span style="font-size:1.1em;line-height:1.2">⚠️</span>
+  <div><strong style="color:#9a6a00">הבהרה:</strong> דוח זה נוצר אוטומטית ומתבסס על מסמכי מדיניות ורגולציה המופיעים במקורות. אין לראות בו אישור, אסמכתא או חוות דעת רשמית. הדוח נועד להשראה ולחשבה ראשונית בלבד, ואינו תחליף לייעוץ מקצועי, משפטי או רגולטורי.</div>
+</div>
+    <div style="background:linear-gradient(135deg,#1a3a5c,#2c3e50);color:white;padding:45px 35px;text-align:center">
+      <h1 class="ed" style="font-size:2.4em;margin-bottom:8px;text-shadow:2px 2px 4px rgba(0,0,0,.3)">⚠️ דוח ניהול סיכונים</h1>
+      <div class="ed" style="font-size:1.1em;opacity:.9;margin-bottom:6px">מעבדות וירטואליות (VR/AR/MR) — ניסויי מדע במשקפות להוראת מדע וטכנולוגיה</div>
+      <div class="ed" style="display:inline-block;background:rgba(255,255,255,.2);padding:7px 16px;border-radius:20px;font-size:.85em;margin-top:10px">אחראי: שלומי נויפלד — מנהל הפרויקט • אוקטובר 2026</div>
+    </div>
+
+    <nav class="r-nav" style="position:sticky;top:0;background:linear-gradient(135deg,#34495e,#2c3e50);z-index:900;box-shadow:0 4px 8px rgba(0,0,0,.2)">
+      <ul style="display:flex;list-style:none;margin:0;padding:0">
+        <li style="flex:1"><a href="#s1" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">📋 פרויקט</a></li><li style="flex:1"><a href="#s2" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">⚠️ סיכונים</a></li><li style="flex:1"><a href="#s3" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">📈 התמודדות</a></li><li style="flex:1"><a href="#s4" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">🚀 אסדרה</a></li><li style="flex:1"><a href="#s5" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">📊 חדשנות</a></li><li style="flex:1"><a href="#s6" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">✅ רגולציה</a></li><li style="flex:1"><a href="#s7" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">📝 סיכום</a></li><li style="flex:1"><a href="#s8" style="display:block;padding:13px 6px;color:#bdc3c7;text-decoration:none;text-align:center;font-weight:600;font-size:.75em;border-left:1px solid #2c3e50" onmouseover="this.style.background='#2c3e50';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#bdc3c7'">📚 מקורות</a></li>
+      </ul>
+    </nav>
+
+    <section id="s1" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">📋 הגדרת הפרויקט</div>
+      <div style="padding:28px;background:linear-gradient(135deg,#f8f9fa,#e9ecef)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px">
+          <div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">👤 <span class="ed">אחראי פרויקט</span></h4><p class="ed" style="color:#34495e;font-size:.88em">שלומי נויפלד — מנהל הפרויקט; ליווי אסדרה: אסדרת חדשנות, אגף מו"פ</p></div><div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">🏢 <span class="ed">ארגון</span></h4><p class="ed" style="color:#34495e;font-size:.88em">אגף מו"פ (ניסויים ויוזמות); לקוח: מינהל חדשנות וטכנולוגיה; ספקי תוכן וציוד VR/AR; מורי המדעים</p></div><div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">🌍 <span class="ed">היקף הפרויקט</span></h4><p class="ed" style="color:#34495e;font-size:.88em">כיתות ט', מדע וטכנולוגיה; כל ספק מפעיל 3–5 בתי ספר; כ-200 בתי ספר נרשמו לקול הקורא</p></div><div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">📅 <span class="ed">לוח זמנים</span></h4><p class="ed" style="color:#34495e;font-size:.88em">שני קולות קוראים (בתי ספר וספקים) ← השלמת תנאי סף ← הפעלה ← נקודת הכרעה בסיום הפיילוט</p></div><div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">🚀 <span class="ed">סוג החדשנות</span></h4><p class="ed" style="color:#34495e;font-size:.88em">טכנולוגיה מפציעה (XR) ב"בשלות בהתהוות", ומודל הפעלה חדש שבו מומחה תוכן של ספק מפעיל את הניסוי</p></div><div style="background:white;padding:16px;border-radius:12px;box-shadow:0 5px 16px rgba(0,0,0,.07);border-top:4px solid #3498db"><h4 style="color:#2c3e50;margin-bottom:6px;font-size:.92em">📋 <span class="ed">סטטוס רגולטורי</span></h4><p class="ed" style="color:#34495e;font-size:.88em">מומלץ אישור מותנה כארגז חול רגולטורי; הפיילוט טרם הוגדר רשמית ככזה</p></div>
+        </div>
+      </div>
+      <div style="background:white;margin:18px 28px;padding:20px;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.07)">
+        <h3 class="ed" style="color:#2c3e50;margin-bottom:12px;font-size:1.15em;text-align:center">🎯 מטרות הפרויקט</h3>
+        <div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>1. מענה למחסור בלבורנטיות ובמורי מדעים</strong><br><span style="color:#34495e;font-size:.93em">קיום ניסויי מדע גם כשאין לבורנט או מורה בעל הכשרה מתאימה לניהול ניסוי במעבדה הפיזית.</span></div><div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>2. שיפור יכולות החקר המדעי של התלמידים</strong><br><span style="color:#34495e;font-size:.93em">ניסוח שאלת חקר, תכנון וביצוע ניסוי, איסוף וניתוח נתונים והסקת מסקנות, ברוח גישת ה-STEM ותוכנית הלימודים.</span></div><div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>3. מודל פדגוגי-תפעולי בר-הטמעה</strong><br><span style="color:#34495e;font-size:.93em">בחינה מבוקרת של מה עובד, מהו המודל המיטבי והאם וכיצד להרחיב, לנוכח ביקוש של כ-200 בתי ספר.</span></div>
+      </div>
+      <div style="background:white;margin:18px 28px;padding:20px;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.07)">
+        <h3 class="ed" style="color:#2c3e50;margin-bottom:12px;font-size:1.15em;text-align:center">📋 תוצרים מצופים</h3>
+        <div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>מודל הפעלה מתועד</strong> — <span style="color:#34495e;font-size:.93em">חלוקת תפקידים בין מורה המדעים למומחה התוכן, שגרת שיעור ומנגנון פיקוח בשטח.</span></div><div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>תקן רכש ותנאי סף לספקי VR/AR</strong> — <span style="color:#34495e;font-size:.93em">שקיפות, אבטחת מידע, DPA חתום, בטיחות ציוד והלימה לתוכנית הלימודים.</span></div><div class="ed" style="background:#f8f9fa;margin:8px 0;padding:13px;border-radius:9px;border-right:4px solid #27ae60"><strong>דוח מסקנות והחלטת הרחבה</strong> — <span style="color:#34495e;font-size:.93em">ממצאי מחקר הליווי, משוב מורים ותלמידים והחלטה על הרחבה, עצירה או התאמה.</span></div>
+      </div>
+    </section>
+
+    <section id="s2" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">⚠️ ניהול סיכונים</div>
+      <div style="padding:28px;background:white">
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:22px">
+          <div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef);padding:14px;border-radius:12px;text-align:center;box-shadow:0 5px 16px rgba(0,0,0,.07)"><div class="ed" style="font-size:2.2em;font-weight:700;color:#e74c3c">1</div><div style="font-size:.8em;color:#7f8c8d">גבוהה מאוד</div></div><div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef);padding:14px;border-radius:12px;text-align:center;box-shadow:0 5px 16px rgba(0,0,0,.07)"><div class="ed" style="font-size:2.2em;font-weight:700;color:#f39c12">3</div><div style="font-size:.8em;color:#7f8c8d">גבוהה</div></div><div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef);padding:14px;border-radius:12px;text-align:center;box-shadow:0 5px 16px rgba(0,0,0,.07)"><div class="ed" style="font-size:2.2em;font-weight:700;color:#e8b800">1</div><div style="font-size:.8em;color:#7f8c8d">בינונית</div></div><div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef);padding:14px;border-radius:12px;text-align:center;box-shadow:0 5px 16px rgba(0,0,0,.07)"><div class="ed" style="font-size:2.2em;font-weight:700;color:#27ae60">0</div><div style="font-size:.8em;color:#7f8c8d">נמוכה</div></div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px">
+    <div style="background:white;border-radius:14px;box-shadow:0 8px 25px rgba(0,0,0,.09);padding:22px;border-top:5px solid #e74c3c">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <div class="ed" style="font-size:1.05em;font-weight:700;color:#2c3e50;flex:1">מומחה תוכן שאינו מורה מנהל בפועל את הניסוי</div>
+        <div class="ed" style="background:#e74c3c;color:white;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700;white-space:nowrap">חומרה גבוהה מאוד</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:12px 0;text-align:center">
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">9</div><div style="font-size:.78em;color:#7f8c8d">הסתברות</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">9</div><div style="font-size:.78em;color:#7f8c8d">עוצמת נזק</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">81</div><div style="font-size:.78em;color:#7f8c8d">דרגת חומרה</div></div>
+      </div>
+      <div class="ed" style="background:#f8f9fa;padding:12px;border-radius:8px;border-right:4px solid #bdc3c7;font-size:.93em;color:#34495e;line-height:1.6;margin-top:10px">לפי התיאור המבצעי, מומחה התוכן של הספק מנחה את התלמידים בביצוע הניסוי. הדבר נוגע בסמכות ההוראה, בסמכות ההערכה ובגישה למידע אישי של תלמידים (נגזר ממטרה 1: מענה למחסור בלבורנטיות ובמורי מדעים).</div>
+      <div class="ed" style="font-size:.8em;color:#555;background:#f0f4ff;padding:6px 11px;border-radius:7px;margin-top:8px;border-right:3px solid #3498db">📌 <strong>מקור:</strong> חוזר מנכ"ל עה/7(ב), סעיפים 1.5.5.א ו-1.2.6 | חוק חינוך ממלכתי | חוק הגנת הפרטיות, תשמ"א-1981</div>
+      <div style="margin-top:12px">
+        <div style="font-weight:700;color:#e74c3c;margin-bottom:5px">השלכות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ הפרה אפשרית של סמכות ההוראה</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ הערכה לא מוסמכת של תלמידים</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ החלשת מעמד המורה והלבורנט</li></ul>
+        <div style="font-weight:700;color:#27ae60;margin:10px 0 5px">הזדמנויות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ הגדרת המורה כ"מתכלל" הפדגוגי-בטיחותי של השיעור</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ מודל הפעלה מתועד שיכול לשמש בסיס להרחבה</li></ul>
+      </div>
+    </div>
+    <div style="background:white;border-radius:14px;box-shadow:0 8px 25px rgba(0,0,0,.09);padding:22px;border-top:5px solid #f39c12">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <div class="ed" style="font-size:1.05em;font-weight:700;color:#2c3e50;flex:1">נתוני VR/AR של קטינים ללא מסגרת פרטיות</div>
+        <div class="ed" style="background:#f39c12;color:white;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700;white-space:nowrap">חומרה גבוהה</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:12px 0;text-align:center">
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">8</div><div style="font-size:.78em;color:#7f8c8d">הסתברות</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">9</div><div style="font-size:.78em;color:#7f8c8d">עוצמת נזק</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">72</div><div style="font-size:.78em;color:#7f8c8d">דרגת חומרה</div></div>
+      </div>
+      <div class="ed" style="background:#f8f9fa;padding:12px;border-radius:8px;border-right:4px solid #bdc3c7;font-size:.93em;color:#34495e;line-height:1.6;margin-top:10px">המשקפות אוספות נתוני תנועת ראש, עיניים וגוף, מרחב וקול. אין הנחיה ייעודית, אין DPA מול הספקים ואין נוהל הסכמת הורים לטכנולוגיה immersive (נגזר ממטרה 3: מודל פדגוגי-תפעולי בר-הטמעה).</div>
+      <div class="ed" style="font-size:.8em;color:#555;background:#f0f4ff;padding:6px 11px;border-radius:7px;margin-top:8px;border-right:3px solid #3498db">📌 <strong>מקור:</strong> חוק הגנת הפרטיות, תשמ"א-1981 | חדשנות אחראית ושימוש בכלי בינה מלאכותית בחינוך (2025) — אינה חלה על XR</div>
+      <div style="margin-top:12px">
+        <div style="font-weight:700;color:#e74c3c;margin-bottom:5px">השלכות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ חשיפת מידע רגיש על קטינים</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ סיכון משפטי ותדמיתי</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ תלונות הורים ואי-אחידות בין בתי ספר</li></ul>
+        <div style="font-weight:700;color:#27ae60;margin:10px 0 5px">הזדמנויות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ הנחיית פרטיות ל-XR כתקדים לטכנולוגיות מפציעות</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ עקרון צמצום נתונים בתוך ה-DPA</li></ul>
+      </div>
+    </div>
+    <div style="background:white;border-radius:14px;box-shadow:0 8px 25px rgba(0,0,0,.09);padding:22px;border-top:5px solid #f39c12">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <div class="ed" style="font-size:1.05em;font-weight:700;color:#2c3e50;flex:1">בטיחות ובריאות בשימוש במשקפות</div>
+        <div class="ed" style="background:#f39c12;color:white;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700;white-space:nowrap">חומרה גבוהה</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:12px 0;text-align:center">
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">6</div><div style="font-size:.78em;color:#7f8c8d">הסתברות</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">9</div><div style="font-size:.78em;color:#7f8c8d">עוצמת נזק</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">54</div><div style="font-size:.78em;color:#7f8c8d">דרגת חומרה</div></div>
+      </div>
+      <div class="ed" style="background:#f8f9fa;padding:12px;border-radius:8px;border-right:4px solid #bdc3c7;font-size:.93em;color:#34495e;line-height:1.6;margin-top:10px">תלמיד "עיוור" למרחב סביבו, רגישות לאור (אפילפסיה), תחלואת תנועה והיגיינת ציוד משותף. אין תקן בטיחות VR לקטינים, והאחריות בזמן תקלה אינה מוגדרת (נגזר ממטרה 1: מענה למחסור בלבורנטיות ובמורי מדעים).</div>
+      <div class="ed" style="font-size:.8em;color:#555;background:#f0f4ff;padding:6px 11px;border-radius:7px;margin-top:8px;border-right:3px solid #3498db">📌 <strong>מקור:</strong> חוזר מנכ"ל עה/7(ב), סעיף 1.2.10 (חובת השגחה) | מחקר PubMed על השפעת משקפות VR על ילדים</div>
+      <div style="margin-top:12px">
+        <div style="font-weight:700;color:#e74c3c;margin-bottom:5px">השלכות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ פגיעה פיזית או בריאותית</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ עצירת הפיילוט בדיעבד</li></ul>
+        <div style="font-weight:700;color:#27ae60;margin:10px 0 5px">הזדמנויות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ פרוטוקול שימוש: הגבלת משך, הפסקות ובדיקה מקדימה</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ זכות סירוב עם חלופה לימודית שוות-ערך</li></ul>
+      </div>
+    </div>
+    <div style="background:white;border-radius:14px;box-shadow:0 8px 25px rgba(0,0,0,.09);padding:22px;border-top:5px solid #f39c12">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <div class="ed" style="font-size:1.05em;font-weight:700;color:#2c3e50;flex:1">פתרונות ספקים שאינם תואמים את תוכנית הלימודים</div>
+        <div class="ed" style="background:#f39c12;color:white;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700;white-space:nowrap">חומרה גבוהה</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:12px 0;text-align:center">
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">7</div><div style="font-size:.78em;color:#7f8c8d">הסתברות</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">7</div><div style="font-size:.78em;color:#7f8c8d">עוצמת נזק</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">49</div><div style="font-size:.78em;color:#7f8c8d">דרגת חומרה</div></div>
+      </div>
+      <div class="ed" style="background:#f8f9fa;padding:12px;border-radius:8px;border-right:4px solid #bdc3c7;font-size:.93em;color:#34495e;line-height:1.6;margin-top:10px">פתרונות לא בשלים או ניסויים שאינם מפתחים מיומנויות חקר, וסיכון שהפתרון ישמש תחליף קבוע למעבדה הפיזית ולא מענה משלים (נגזר ממטרה 2: שיפור יכולות החקר המדעי של התלמידים).</div>
+      <div class="ed" style="font-size:.8em;color:#555;background:#f0f4ff;padding:6px 11px;border-radius:7px;margin-top:8px;border-right:3px solid #3498db">📌 <strong>מקור:</strong> תוכנית הלימודים במדע וטכנולוגיה לחטיבת הביניים | חוזר מנכ"ל עה/7(ב)</div>
+      <div style="margin-top:12px">
+        <div style="font-weight:700;color:#e74c3c;margin-bottom:5px">השלכות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ ניסויים לא רלוונטיים פדגוגית</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ פגיעה במיומנויות מעבדה פיזיות</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ קושי של מורים להטמיע את הכלי</li></ul>
+        <div style="font-weight:700;color:#27ae60;margin:10px 0 5px">הזדמנויות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ מיפוי הלימה פדגוגית כתנאי סף לבחירת ספקים</li></ul>
+      </div>
+    </div>
+    <div style="background:white;border-radius:14px;box-shadow:0 8px 25px rgba(0,0,0,.09);padding:22px;border-top:5px solid #e8b800">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <div class="ed" style="font-size:1.05em;font-weight:700;color:#2c3e50;flex:1">פיילוט ללא מעמד ארגז חול ובחירה לא שקופה</div>
+        <div class="ed" style="background:#e8b800;color:#2c3e50;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700;white-space:nowrap">חומרה בינונית</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:12px 0;text-align:center">
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">7</div><div style="font-size:.78em;color:#7f8c8d">הסתברות</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">6</div><div style="font-size:.78em;color:#7f8c8d">עוצמת נזק</div></div>
+        <div style="background:#f8f9fa;padding:10px;border-radius:8px"><div class="ed" style="font-size:1.5em;font-weight:700">42</div><div style="font-size:.78em;color:#7f8c8d">דרגת חומרה</div></div>
+      </div>
+      <div class="ed" style="background:#f8f9fa;padding:12px;border-radius:8px;border-right:4px solid #bdc3c7;font-size:.93em;color:#34495e;line-height:1.6;margin-top:10px">הפיילוט אינו מוגדר רשמית כארגז חול, אין גורם אסדרה ממונה, ואין קריטריונים מתועדים לבחירה מתוך כ-200 הנרשמים (נגזר ממטרה 3: מודל פדגוגי-תפעולי בר-הטמעה).</div>
+      <div class="ed" style="font-size:.8em;color:#555;background:#f0f4ff;padding:6px 11px;border-radius:7px;margin-top:8px;border-right:3px solid #3498db">📌 <strong>מקור:</strong> חוזר מנכ"ל לאסדרת חדשנות | ועדת הייחודיים (ארגזי חול רגולטוריים)</div>
+      <div style="margin-top:12px">
+        <div style="font-weight:700;color:#e74c3c;margin-bottom:5px">השלכות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ היעדר גיבוי פורמלי להרחבה</li><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">⚠️ ביקורת על הוגנות הבחירה</li></ul>
+        <div style="font-weight:700;color:#27ae60;margin:10px 0 5px">הזדמנויות:</div>
+        <ul style="list-style:none;padding-right:10px"><li class="ed" style="padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:.9em">✅ מסלול ועדת הייחודיים הקיים — ללא צורך במנגנון חדש</li></ul>
+      </div>
+    </div></div>
+      </div>
+    </section>
+
+    <section id="s3" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">📈 תוכנית התמודדות</div>
+      <div style="padding:28px;background:linear-gradient(135deg,#ecf0f1,#dfe6e9)">
+    <div style="background:white;border-radius:16px;box-shadow:0 10px 28px rgba(0,0,0,.08);overflow:hidden;margin-bottom:20px">
+      <div class="ed" style="background:linear-gradient(135deg,#27ae60,#2ecc71);color:white;padding:16px 22px;font-weight:700;font-size:1.05em">אסטרטגיה 1 — חלוקת תפקידים וסמכות המורה</div>
+      <div style="padding:20px 22px">
+        <p class="ed" style="color:#34495e;margin-bottom:14px">המורה נשאר בעל הסמכות הפדגוגית, הבטיחותית וההערכתית; מומחה התוכן מפעיל את הציוד בלבד.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+          <div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">מסמך תפקידים חתום</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">נספח לכל ספק: מה מותר ואסור למומחה התוכן, כולל הגבלת גישה למידע אישי.</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">לפני הפעלה</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">אישור מפמ"ר המדעים</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">פנייה לפי סעיף 1.2.6 לחוזר עה/7(ב), לאור השינוי במודל ניהול הניסוי.</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">תנאי להפעלה</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">מדד הצלחה</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">מורה מוסמך נוכח בכל שיעור (אפס חריגות), והציון נקבע בידי המורה בלבד.</p>
+            <span style="display:inline-block;background:#8e44ad;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">KPI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:16px;box-shadow:0 10px 28px rgba(0,0,0,.08);overflow:hidden;margin-bottom:20px">
+      <div class="ed" style="background:linear-gradient(135deg,#27ae60,#2ecc71);color:white;padding:16px 22px;font-weight:700;font-size:1.05em">אסטרטגיה 2 — פרטיות, בטיחות והסכמה</div>
+      <div style="padding:20px 22px">
+        <p class="ed" style="color:#34495e;margin-bottom:14px">השלמת תנאי הסף לפרטיות ולבטיחות לפני שמשקפות נכנסות לכיתה.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+          <div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">DPA והנחיית פרטיות ל-XR</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">הסכם עיבוד מידע מול כל ספק, רשימת נתונים נאספים וצמצום למינימום.</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">לפני הפעלה</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">בטיחות, הסכמה וחלופה</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">אימות בטיחות הציוד מול גורם הבטיחות, טופס הסכמה ונוהל חלופה לא-טכנולוגית.</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">תנאי להפעלה</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">מדד הצלחה</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">DPA חתום מכל ספק, וטופס הסכמה ונוהל חלופה לכל תלמיד משתתף.</p>
+            <span style="display:inline-block;background:#8e44ad;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">KPI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:16px;box-shadow:0 10px 28px rgba(0,0,0,.08);overflow:hidden;margin-bottom:20px">
+      <div class="ed" style="background:linear-gradient(135deg,#27ae60,#2ecc71);color:white;padding:16px 22px;font-weight:700;font-size:1.05em">אסטרטגיה 3 — מסגרת ארגז חול והוגנות</div>
+      <div style="padding:20px 22px">
+        <p class="ed" style="color:#34495e;margin-bottom:14px">עיגון פורמלי של הפיילוט ובחירה שקופה של בתי הספר.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+          <div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">הגשה לוועדת הייחודיים</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">הגדרת הפיילוט כארגז חול ומינוי גורם אסדרה ממונה.</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">מיידי</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">קריטריוני בחירה</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">פרסום מראש של קריטריונים (נגישות, פריפריה, מגזר) למיון הנרשמים.</p>
+            <span style="display:inline-block;background:#3498db;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">מיידי</span>
+          </div><div style="background:#f8f9fa;padding:12px;border-radius:10px;border-right:4px solid #27ae60">
+            <h5 class="ed" style="color:#27ae60;margin-bottom:4px;font-size:.92em">מדד הצלחה</h5>
+            <p class="ed" style="font-size:.85em;color:#34495e">החלטת ועדה מתועדת, רשימת נבחרים מנומקת ודוח מסקנות בנקודת ההכרעה.</p>
+            <span style="display:inline-block;background:#8e44ad;color:white;padding:2px 9px;border-radius:11px;font-size:.74em;margin-top:4px">KPI</span>
+          </div>
+        </div>
+      </div>
+    </div></div>
+    </section>
+
+    <section id="s4" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">🚀 אסדרת חדשנות</div>
+      <div style="padding:28px;background:linear-gradient(135deg,#f8f9fa,#e9ecef)">
+        <div style="background:white;padding:22px;border-radius:14px;margin-bottom:16px;box-shadow:0 5px 16px rgba(0,0,0,.07)">
+          <h3 class="ed" style="color:#8e44ad;margin-bottom:10px">הגדרת רמת החדשנות — מעבדות וירטואליות</h3>
+          <p class="ed" style="color:#34495e;line-height:1.8">החדשנות כפולה: טכנולוגיה מפציעה (XR), המזוהה במסמך המוכנות כ"בשלות בהתהוות", ומודל הפעלה חדש שבו מומחה תוכן של ספק מפעיל את הניסוי בכיתה. חוזר מנכ"ל עה/7(ב) נשאר תקף לגבי סמכות המורה וחובת ההשגחה, אך מנגנון הלבורנט בו נבנה על סיכון חומרי שאינו קיים ב-VR. מנגד, בטיחות המרחב, הסיכון הבריאותי ופרטיות נתוני התנועה והקול אינם מכוסים בשום הנחיה קיימת. לכן מדובר בוואקום רגולטורי אמיתי ולא רק בפער יישומי, והפרויקט מתאים מטבעו לארגז חול.</p>
+          <p class="ed" style="color:#34495e;line-height:1.8;margin-top:10px">עקרונות RRI: שלומות — הגבלת משך חשיפה, הפסקות וחלופה לתלמיד שאינו יכול להשתתף; שקיפות — קריטריוני בחירה מפורסמים ורשימת נתונים נאספים לכל ספק; אחריותיות — המורה שומר על הסמכות הפדגוגית וההערכתית, ומתמנה גורם אסדרה ממונה; מידתיות — 3–5 בתי ספר לכל ספק ונקודת הכרעה בסיום הפיילוט.</p>
+        </div>
+        <div style="background:#f0f8ff;padding:18px;border-radius:12px;border-left:5px solid #3498db">
+          <h4 style="color:#34495e;margin-bottom:8px">🏛️ המלצת ועדת המשנה לאסדרת חדשנות</h4>
+          <p class="ed" style="color:#34495e;line-height:1.8">בהתאם לחוזר המנכ"ל לאסדרת חדשנות, מומלץ לאשר את הפרויקט כהתנסות בארגז חול רגולטורי בתנאי ש: (1) חלוקת התפקידים בין מומחה התוכן למורה תתועד בכתב מול כל ספק; (2) ייחתם DPA מול כל ספק לפני ההפעלה; (3) תוגש פנייה לאישור מפמ"ר המדעים לפי סעיף 1.2.6; (4) בטיחות הציוד תאומת מול גורם הבטיחות; (5) תוכרע שאלת הסכמת ההורים מול יועץ פרטיות; (6) יפורסמו קריטריוני בחירה שקופים; (7) ההערכה הפורמלית תישאר בלעדית בידי המורה.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="s5" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">📊 רמת החדשנות</div>
+      <div style="background:linear-gradient(135deg,#8e44ad,#9b59b6);color:white;padding:35px;text-align:center">
+        <h2 class="ed" style="font-size:1.3em;margin-bottom:4px">ציון חדשנות כולל</h2>
+        <div class="ed" style="font-size:4.5em;font-weight:700;margin:16px 0;text-shadow:2px 2px 5px rgba(0,0,0,.3)">7.5</div>
+        <div class="ed" style="font-size:1.1em;opacity:.9;margin-top:-10px;margin-bottom:12px">/ 10 — חדשנות גבוהה, טכנולוגית-ארגונית</div>
+        <p class="ed" style="opacity:.85;max-width:600px;margin:0 auto 20px">המורכבות והסיכון הטכנולוגיים מעלים את הציון, בהיעדר תקן והנחיה ייעודיים ל-XR. ההשפעה הפדגוגית גבוהה בתנאי שהפתרון משלים את המעבדה הפיזית ואינו מחליף אותה.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+          <div style="background:rgba(255,255,255,.14);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,.2)"><div class="ed" style="font-size:2em;font-weight:700;color:#f39c12;margin-bottom:4px">7</div><div class="ed" style="font-weight:700;margin-bottom:4px">השפעה פדגוגית</div><p class="ed" style="opacity:.85;font-size:.86em">מאפשר ניסויים שלא היו מתקיימים כלל, אך מחייב שמירה על מיומנויות מעבדה פיזיות.</p></div><div style="background:rgba(255,255,255,.14);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,.2)"><div class="ed" style="font-size:2em;font-weight:700;color:#f39c12;margin-bottom:4px">8</div><div class="ed" style="font-weight:700;margin-bottom:4px">מורכבות טכנולוגית</div><p class="ed" style="opacity:.85;font-size:.86em">משקפות VR/AR/MR, תוכן מספקים מרובים ותפעול ציוד בבתי הספר.</p></div><div style="background:rgba(255,255,255,.14);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,.2)"><div class="ed" style="font-size:2em;font-weight:700;color:#f39c12;margin-bottom:4px">7</div><div class="ed" style="font-weight:700;margin-bottom:4px">שינוי ארגוני</div><p class="ed" style="opacity:.85;font-size:.86em">מומחה חיצוני בכיתה, שינוי בתפקיד המורה ושני קולות קוראים מקבילים.</p></div><div style="background:rgba(255,255,255,.14);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,.2)"><div class="ed" style="font-size:2em;font-weight:700;color:#f39c12;margin-bottom:4px">8</div><div class="ed" style="font-weight:700;margin-bottom:4px">סיכון טכנולוגי</div><p class="ed" style="opacity:.85;font-size:.86em">נתוני תנועה וקול, בטיחות ובריאות, וללא תקן או הנחיה ייעודיים.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="s6" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">✅ התאמה לדרישות אסדרה</div>
+      <div style="padding:28px;background:#ecf0f1">
+        <table style="width:100%;background:white;border-radius:14px;overflow:hidden;box-shadow:0 5px 16px rgba(0,0,0,.07);border-collapse:collapse">
+          <thead><tr style="background:#34495e;color:white"><th style="padding:13px 16px;text-align:right;font-weight:700">דרישת אסדרה</th><th style="padding:13px 16px;text-align:right;font-weight:700">סטטוס</th><th style="padding:13px 16px;text-align:right;font-weight:700">פעולה נדרשת</th></tr></thead>
+          <tbody><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>חוזר מנכ"ל עה/7(ב): סמכות ניהול הניסוי</strong><br><small style="color:#7f8c8d">סעיף 1.5.5.א — המורה מנהל את הניסוי; סעיף 1.2.6 — שינוי בהנחיות מחייב אישור מפמ"ר.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#e74c3c;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">דורש שיפור</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">מסמך תפקידים חתום מול כל ספק ופנייה לאישור מפמ"ר המדעים.</td></tr><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>חובת השגחה (סעיף 1.2.10)</strong><br><small style="color:#7f8c8d">תלמידים לא ישהו במעבדה ללא המורה או הלבורנט.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#f39c12;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">עמידה חלקית</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">נוכחות מורה מוסמך בכל שיעור ואיסור על השארת תלמידים עם מומחה התוכן לבדו.</td></tr><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>חוק הגנת הפרטיות ונתוני XR</strong><br><small style="color:#7f8c8d">נתוני תנועה, מרחב וקול של קטינים, ללא הנחיה ייעודית.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#3498db;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">בפיתוח</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">DPA מול כל ספק, הנחיית פרטיות ל-XR וצמצום נתונים, כולל הפרדה מהציון.</td></tr><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>הסכמת הורים לטכנולוגיה immersive</strong><br><small style="color:#7f8c8d">אין נוהל ייעודי, בשונה מהנוהל הקיים לכלי AI.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#3498db;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">בפיתוח</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">הכרעה מול יועץ פרטיות וטופס הסכמה בהשראת נוהל כלי ה-AI.</td></tr><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>בטיחות ציוד VR לקטינים</strong><br><small style="color:#7f8c8d">אין תקן מאושר; רגישות לאור, תחלואת תנועה ובטיחות מרחב.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#3498db;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">בפיתוח</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">אימות מול גורם הבטיחות ופרוטוקול שימוש: משך, הפסקות ובדיקה מקדימה.</td></tr><tr style="border-bottom:1px solid #ecf0f1"><td class="ed" style="padding:13px 16px;vertical-align:top"><strong>ארגז חול רגולטורי (ועדת הייחודיים)</strong><br><small style="color:#7f8c8d">מבנה הפיילוט תואם, אך טרם הוגדר רשמית.</small></td><td style="padding:13px 16px;vertical-align:top"><span style="background:#f39c12;color:white;padding:3px 10px;border-radius:10px;font-size:.82em;font-weight:700;display:inline-block">עמידה חלקית</span></td><td class="ed" style="padding:13px 16px;vertical-align:top">הגשה לוועדת הייחודיים ומינוי גורם אסדרה ממונה.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="s7" style="scroll-margin-top:55px">
+      <div  style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center" class="ed">📝 סיכום מנהלים והמלצות</div>
+      <div style="padding:28px;background:linear-gradient(135deg,#2c3e50,#34495e);color:white">
+        <h2 class="ed" style="text-align:center;color:#f39c12;margin-bottom:16px">סיכום ביצועי</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:18px">
+          <div style="background:rgba(255,255,255,.1);padding:15px;border-radius:12px;border:1px solid rgba(255,255,255,.14)"><h4 style="color:#f39c12;margin-bottom:6px;font-size:.92em">📊 רמת חדשנות</h4><p class="ed" style="font-size:.9em">7.5/10 — טכנולוגיה מפציעה ומודל הפעלה חדש, בוואקום רגולטורי</p></div><div style="background:rgba(255,255,255,.1);padding:15px;border-radius:12px;border:1px solid rgba(255,255,255,.14)"><h4 style="color:#f39c12;margin-bottom:6px;font-size:.92em">🔐 הסיכון הגדול</h4><p class="ed" style="font-size:.9em">מומחה תוכן שאינו מורה מנהל בפועל את הניסוי — ציון 81 — פתרון: מסמך תפקידים, DPA ואישור מפמ"ר</p></div><div style="background:rgba(255,255,255,.1);padding:15px;border-radius:12px;border:1px solid rgba(255,255,255,.14)"><h4 style="color:#f39c12;margin-bottom:6px;font-size:.92em">⚠️ רמת סיכון כוללת</h4><p class="ed" style="font-size:.9em">1 בחומרה גבוהה מאוד, 3 גבוהים, 1 בינוני — ניתנים למיתון בתנאי סף לפני הפעלה</p></div>
+        </div>
+        <div style="background:rgba(255,255,255,.07);padding:18px;border-radius:12px">
+          <h3 style="color:#f39c12;margin-bottom:12px">💡 המלצות מרכזיות</h3>
+          <div class="ed" style="background:rgba(255,255,255,.07);margin:9px 0;padding:12px;border-radius:9px;border-right:4px solid #f39c12;font-size:.91em"><strong>1. למטרה: מענה למחסור בלבורנטיות</strong><br>לאשר את המודל כמענה משלים בלבד, עם נוכחות מורה בכל שיעור וחלוקת תפקידים חתומה מול כל ספק.</div><div class="ed" style="background:rgba(255,255,255,.07);margin:9px 0;padding:12px;border-radius:9px;border-right:4px solid #f39c12;font-size:.91em"><strong>2. למטרה: יכולות חקר</strong><br>לבחור ספקים לפי הלימה לתוכנית הלימודים, להכשיר את המורים לתפקיד ה"מתכלל" ולשמור את ההערכה בידי המורה.</div><div class="ed" style="background:rgba(255,255,255,.07);margin:9px 0;padding:12px;border-radius:9px;border-right:4px solid #f39c12;font-size:.91em"><strong>3. למטרה: מודל בר-הטמעה</strong><br>להגדיר את הפיילוט כארגז חול בוועדת הייחודיים, למנות גורם אסדרה ולקבוע נקודת הכרעה מתועדת בסיומו.</div>
+        </div>
+        <p class="ed" style="text-align:center;margin-top:16px;opacity:.7;font-size:.88em">צעדים מיידיים: (1) מסמך תפקידים ו-DPA מול כל ספק | (2) פנייה לאישור מפמ"ר המדעים | (3) הגשה לוועדת הייחודיים ופרסום קריטריוני בחירה</p>
+      </div>
+    </section>
+
+    <section id="s8" style="scroll-margin-top:55px">
+      <div style="background:linear-gradient(135deg,#16a085,#1abc9c);color:white;padding:20px 35px;font-size:1.6em;font-weight:700;text-align:center">📚 מקורות ידע</div>
+      <div style="background:linear-gradient(135deg,#1a252f,#2c3e50);padding:32px;color:white">
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px"><div style="background:rgba(255,255,255,.08);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.14)"><div style="font-size:.93em;font-weight:700;color:#1abc9c;margin-bottom:11px;padding-bottom:7px;border-bottom:2px solid rgba(26,188,156,.3)">🏛️ חוקי חינוך</div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.google.com/url?q=https://apps.education.gov.il/Mankal/Horaa.aspx?siduri%3D480&sa=D&source=docs&ust=1780673455407346&usg=AOvVaw0bGl6jmiEYR6HV7YlVDF7z" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📌 חוזר מנכ"ל לאסדרת חדשנות</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://he.wikisource.org/wiki/%D7%97%D7%95%D7%A7_%D7%9C%D7%99%D7%9E%D7%95%D7%93_%D7%97%D7%95%D7%91%D7%94" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">⚖️ חוק לימוד חובה, תש"ט–1949</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.gov.il/he/pages/mankal_edu" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📂 מאגר חוזרי מנכ"ל</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.nevo.co.il/law_html/law00/71978.htm" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">⚖️ חוק חינוך ממלכתי</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.gov.il/he/pages/edu-law" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📋 חוקי חינוך במשרד החינוך</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://pop.education.gov.il/tchumey_daat/hinuch-hevrati/pedagogy/curriculum/" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📖 תוכנית ליבה לשעת חינוך</a></div></div><div style="background:rgba(255,255,255,.08);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.14)"><div style="font-size:.93em;font-weight:700;color:#1abc9c;margin-bottom:11px;padding-bottom:7px;border-bottom:2px solid rgba(26,188,156,.3)">🤖 חדשנות אחראית ובינה מלאכותית</div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://meyda.education.gov.il/files/Pop/0files/lemida-metukshevet/AI/Guidelines.pdf" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">🧠 חדשנות אחראית ושימוש בכלי בינה מלאכותית בחינוך (2025)</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #7f8c8d"><span style="color:#abebc6;font-size:.85em;opacity:.75">🗺️ מפת התמצאות לאסדרת חדשנות</span></div></div><div style="background:rgba(255,255,255,.08);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.14)"><div style="font-size:.93em;font-weight:700;color:#1abc9c;margin-bottom:11px;padding-bottom:7px;border-bottom:2px solid rgba(26,188,156,.3)">📊 תכנון ובקרה</div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://harhayeda.gov.il/media/4wqogjpb/20241208-tasc-di-cio-methodology-for-publishing-v01.pdf" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📄 מדריך לתכנון ובקרה</a></div></div><div style="background:rgba(255,255,255,.08);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.14)"><div style="font-size:.93em;font-weight:700;color:#1abc9c;margin-bottom:11px;padding-bottom:7px;border-bottom:2px solid rgba(26,188,156,.3)">💰 שכר המורים</div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.igm.org.il/site/pg/igm_item_side_info,174430" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📝 עוז לתמורה (ארגון המורים)</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.itu.org.il/%D7%9C%D7%95%D7%91%D7%99-%D7%AA%D7%A0%D7%90%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94/%D7%94%D7%A1%D7%9B%D7%9D-%D7%A7%D7%99%D7%91%D7%95%D7%A6%D7%99-2022/" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📝 אופק חדש (הסתדרות המורים)</a></div></div><div style="background:rgba(255,255,255,.08);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.14)"><div style="font-size:.93em;font-weight:700;color:#1abc9c;margin-bottom:11px;padding-bottom:7px;border-bottom:2px solid rgba(26,188,156,.3)">📅 ארגון לימודים ופיתוח מקצועי</div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://meyda.education.gov.il/files/MinhalPedagogy/agaf-kishrey/irgun-elyona.pdf" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">🗓️ ארגון הלמידה בחטיבה העליונה תשפ"ו</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://pop.education.gov.il/headquarters-civil-education-coexistence/professional-development/" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">🎓 פיתוח מקצועי – פורטל עובדי הוראה</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://www.itu.org.il/%D7%9C%D7%95%D7%91%D7%99-%D7%AA%D7%A0%D7%90%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94/%D7%94%D7%AA%D7%A4%D7%AA%D7%97%D7%95%D7%AA-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99%D7%AA/" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">🏫 הנחיות הסתדרות המורים</a></div><div style="margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.06);border-radius:6px;border-right:3px solid #1abc9c"><a href="https://pop.education.gov.il/tchumey_daat/safrut/chativat-beynayim/pedagogia-safrut/digital-books/" target="_blank" rel="noopener" style="color:#abebc6;text-decoration:none;font-size:.85em">📚 מאגר ספרי לימוד מאושרים</a></div></div></div>
+        <div style="margin-top:18px;background:rgba(26,188,156,.1);border:1px solid rgba(26,188,156,.25);border-radius:10px;padding:13px;font-size:.83em;color:rgba(255,255,255,.8)">
+          <strong style="color:#1abc9c">📌 הערת שימוש:</strong> המקורות עשויים להשתנות מעת לעת. לבדיקת עדכוני מדיניות:
+          <a href="https://edu.gov.il" target="_blank" style="color:#1abc9c">edu.gov.il</a>
+        </div>
+      </div>
+    </section>
+
+    <div style="background:#1a252f;color:#7f8c8d;text-align:center;padding:22px;font-size:.88em">
+      <p class="ed">דוח ניהול סיכונים — מעבדות וירטואליות (VR/AR/MR) | משרד החינוך | אוקטובר 2026</p>
+      <p style="margin-top:5px;opacity:.8">מבוסס על: חוזר מנכ"ל עה/7(ב) | חוק הגנת הפרטיות | חוזר מנכ"ל לאסדרת חדשנות | עקרונות RRI</p>
+      <p style="margin-top:10px"><strong style="color:#3498db">פיתוח ועיצוב: ד"ר אסף אוזן</strong></p>
+    </div></div></div></body></html>
